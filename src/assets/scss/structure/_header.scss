@@ -1,0 +1,42 @@
+/*------------------------------------
+    Header
+------------------------------------*/
+
+.app-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    background-color: transparent;
+
+    .header-wrap {
+        height: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        
+        .header-left,
+        .header-right {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+        .header-logo {
+            margin-right: 60px;
+        }
+        .header-menu {
+            & > ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+}

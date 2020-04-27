@@ -160,3 +160,35 @@
         @include bg-gradient($i);
     }
 }
+
+/*------------------------------------
+    Helpers
+------------------------------------*/
+.text-italic {
+    font-style: italic;
+}
+.text-normal {
+    font-style: normal;
+}
+.text-underline {
+    font-style: underline;
+}
+
+/*------------------------------------
+    Text specialized 
+------------------------------------*/
+
+.hidden {
+    display: none;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

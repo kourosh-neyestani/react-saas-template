@@ -3,13 +3,13 @@
 ------------------------------------*/
 
 // Main Colors
-$base-0: '';
+$base-0: #f9f9ff;
 $base-1: '';
 $base-2: '';
 $base-3: '';
-$primary: '';
-$primary-1: '';
-$primary-2: '';
+$primary: #0d13d7;
+$primary-1: #262bdb;
+$primary-2: #3c41df;
 $secondary: '';
 $secondary-1: '';
 $secondary-2: '';
@@ -46,3 +46,19 @@ $container-xl: 1800px;
 // assets
 $fonts: '../../../fonts';
 $images: '../../../images';
+
+$heading-font: $font-family-1;
+$heading-color: $primary;
+
+$h1: 64px;
+$h2: 54px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
+
+$theme-color: $primary;
+$border-color: $primary;
+
+
+$space: 100px;
