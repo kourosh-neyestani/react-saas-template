@@ -43,9 +43,11 @@
     |   |___ List
     |   |___ Card
     |   |___ Tabs
+    |   |___ Form
     |   |___ Title
     |   |___ Skill
     |   |___ Block
+    |   |___ Button
     |   |___ Resume
     |   |___ Widget
     |   |___ Divider
@@ -110,6 +112,9 @@
 /*------------------------------------
     Elements Styles
 ------------------------------------*/
+
+@import 'elements/form';
+@import 'elements/button';
 
 /*------------------------------------
     Sections Styles

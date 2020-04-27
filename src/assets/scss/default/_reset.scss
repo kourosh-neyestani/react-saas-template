@@ -335,3 +335,7 @@ select {
 	height: 40px;
 	padding: 0 15px;
 }
+
+.button:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
