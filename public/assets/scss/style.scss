@@ -164,7 +164,7 @@
 ------------------------------------*/
 
 /*------------------------------------
-    Elements: Shape
+    Element: Shape
 ------------------------------------*/
 
 .el-shape {
@@ -179,7 +179,7 @@
 .el-shape-1 .shape {
     width: 100%;
     padding-top: 100%;
-    position: relative; 
+    position: relative;
     @extend .shadow-left;
 }
 .el-shape-1 .shape,
@@ -193,8 +193,8 @@
 .el-shape-1 .shape:after {
     content: "";
     position: absolute;
-    @extend .display-center;
     background-color: $white;
+    @extend .display-center;
 }
 .el-shape-1 .shape:before {
     width: 72%;
@@ -208,38 +208,160 @@
 }
 
 /*------------------------------------
-    Elements: Title
+    Element: Heading
 ------------------------------------*/
 
-.el-title p,
-.el-title h1,
-.el-title h2,
-.el-title h3,
-.el-title h4 {
-    margin-bottom: 30px;
-}
-.el-title .label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 20px;
+.el-heading {
+    p {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    .el-heading-label {
+        color: $primary;
+        display: block;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    &.el-heading-center {
+        max-width: $sm;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 /*------------------------------------
-    Section: Hero
+    Element: Progress
 ------------------------------------*/
+
+.el-progress {
+    margin-bottom: 20px;
+
+    span {
+        color: $text-color;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 9px;
+    }
+    .el-progress-count {
+        float: right;
+    }
+    .el-progress-label {
+        font-size: 0.9em;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+    div {
+        height: 12px;
+        border-radius: 30px;
+        background-color: #eee;
+
+        .el-progress-bar {
+            width: 0;
+            background-size: 1rem 1rem;
+            background-color: #ccc;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            animation: progress-bar-stripes 1s linear infinite;
+        }
+    }
+}
+
+/*------------------------------------
+Section: Hero
+------------------------------------*/
+
 .section-hero {
-    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+/*------------------------------------
+    Section: About
+------------------------------------*/
+
+.section-about {
     overflow: hidden;
     position: relative;
 }
-.section-hero p {
-    font-size: 14px;
-}
 
-// Hero 1
-.section-hero-1 p {
-    color: $text-color;
-}
-.section-hero-1 img {
-    max-width: 390px;
+// About 1
+.section-about-1 {
+    .el-heading {
+        margin-bottom: 25px;
+    }
+    .about-us-box {
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        padding: 30px;
+        @include overlay("pattern");
+
+        .image {
+            z-index: 3;
+            height: 100%;
+            @extend .display-center;
+            @include overlay("image");
+        }
+        .shape-1,
+        .shape-2 {
+            width: 60%;
+            opacity: .6;
+            padding-top: 30%;
+            position: absolute;
+        }
+        .shape-1 {
+            top: 0;
+            left: 0;
+            border-top: 3px solid;
+            border-left: 3px solid;
+            border-color: $primary;
+        }
+        .shape-2 {
+            right: 0;
+            bottom: 0;
+            border-right: 3px solid;
+            border-bottom: 3px solid;
+            border-color: $primary;
+        }
+        .shape-3 {
+            top: 54%;
+            right: 0;
+            z-index: 15;
+            color: $white;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            position: absolute;
+            padding: 30px 30px 45px;
+            background-color: $primary;
+
+            span {
+                display: block;
+                font-size: 45px;
+                padding: 0;
+            }
+            &:after {
+                right: 8px;
+                bottom: -21px;
+                content: "";
+                opacity: 0.45;
+                display: block;
+                position: absolute;
+                border: 22px solid transparent;
+                border-bottom-color: $primary;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .el-progress:last-child {
+        margin-bottom: 30px;
+    }
 }

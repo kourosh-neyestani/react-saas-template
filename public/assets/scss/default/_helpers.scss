@@ -51,6 +51,10 @@
     display: table-cell;
     vertical-align: middle;
 }
+.display-spacing {
+    padding-top: $space;
+    padding-bottom: $space;
+}
 .display-screen {
     min-height: 100vh;
     padding-top: 100px;
