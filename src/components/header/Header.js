@@ -7,15 +7,10 @@ function Header(props) {
     let logo = <img src="/assets/images/logo/logo.png" alt="Aion" />
 
     return (
-        <header className={`app-header`}>
+        <header className={`app-header app-header-1`}>
             <Container>
                 <div className="header-wrap">
                     <div className="header-left">
-                        <div className="header-logo">
-                            <a href="/">
-                                {logo}
-                            </a>
-                        </div>
                         <div className="header-menu">
                             <ul>
                                 {menu.map((value, index) => (
@@ -26,8 +21,8 @@ function Header(props) {
                     </div>
                     <div className="header-right">
                         <div className="header-link">
-                            <button className="button button-md button-radius button-line-light">
-                                <a href="https://themeforest.net" title="Aion - React Degital Agency Template">BUY NOW</a>
+                            <button className="button button-md button-radius">
+                                <a href="https://themeforest.net" title="Aion - React Degital Agency Template">Sign in</a>
                             </button>
                         </div>
                     </div>

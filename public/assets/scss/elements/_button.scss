@@ -3,6 +3,7 @@ Buttons
 ------------------------------------*/
 
 .button {
+  font-weight: 500;
   position: relative;
   border-radius: 3px;
   white-space: nowrap;
@@ -126,22 +127,22 @@ Buttons
 }
 
 .button-line-light {
-  color: var(--base-1);
-  border: 1px solid var(--base-1);
+  color: $base-0;
+  border: 1px solid $base-0;
 }
 .button-line-dark {
-  color: var(--base-0);
-  border: 1px solid var(--base-0);
+  color: $base-1;
+  border: 1px solid $base-1;
 }
 
 .button-line-primary {
-  color: var(--primary);
-  border: 1px solid var(--primary);
+  color: $primary;
+  border: 1px solid $primary;
 }
 
 .button-line-secondary {
-  color: var(--secondary);
-  border: 1px solid var(--secondary);
+  color: $secondary;
+  border: 1px solid $secondary;
 }
 
 /*

@@ -2,15 +2,20 @@
  * Reset Styels
  */
 
- * {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 html {
-	overflow: hidden;
-	overflow-y: auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    background-color: $base-0;
 }
 
 article,
@@ -184,8 +189,8 @@ nav ol {
     list-style: none;
     list-style-image: none;
 }
-li>ul,
-li>ol {
+li > ul,
+li > ol {
     margin: 0;
 }
 img {
@@ -317,25 +322,31 @@ select,
 textarea {
     border: inherit;
     outline: inherit;
-	background: transparent;
-	transition: all 0.4s ease-out 0s;
-	&:focus,
-	&:active {
-		outline: none;
-	}
+    background: transparent;
+    transition: all 0.4s ease-out 0s;
+    &:focus,
+    &:active {
+        outline: none;
+    }
 }
 input,
 select,
 textarea {
-	width: 100%;
-	font-size: 14px;
+    width: 100%;
+    font-size: 14px;
 }
 input,
 select {
-	height: 40px;
-	padding: 0 15px;
+    height: 40px;
+    padding: 0 15px;
 }
 
 .button:not(:disabled):not(.disabled) {
     cursor: pointer;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
 }

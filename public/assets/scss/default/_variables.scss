@@ -4,10 +4,11 @@
 
 // Main Colors
 $base-0: #f9f9ff;
-$base-1: '';
+$base-1: #000;
 $base-2: '';
 $base-3: '';
 $primary: #0d13d7;
+$primary: orangered;
 $primary-1: #262bdb;
 $primary-2: #3c41df;
 $secondary: '';
@@ -48,7 +49,7 @@ $fonts: '../../../fonts';
 $images: '../../../images';
 
 $heading-font: $font-family-1;
-$heading-color: $primary;
+$heading-color: $black;
 
 $h1: 64px;
 $h2: 54px;
@@ -62,3 +63,5 @@ $border-color: $primary;
 
 
 $space: 100px;
+
+$text-color: #333;

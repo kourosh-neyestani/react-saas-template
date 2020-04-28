@@ -192,3 +192,18 @@
 .clearfix:after {
     clear: both;
 }
+
+
+/*------------------------------------
+    Shadow
+------------------------------------*/
+
+.shadow-left {
+    box-shadow: -60px 43px 90px rgba(13, 134, 215, 0.18);
+}
+.shadow-right {
+    box-shadow: 60px 43px 90px #ccc;
+}
+.shadow-center {
+    box-shadow: 0 43px 90px #ccc;
+}

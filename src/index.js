@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker"
 
 // Scenes
 import Demo from './scenes/demo/Demo'
+import Home1 from './scenes/home/home1'
 
 // Delete
 import Header from './components/header/Header'
@@ -16,8 +17,8 @@ const Root = () => {
     return (
         <BrowserRouter basename={'/'}>
             <Switch>
-                <Header />
                 <Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo}/>
+                <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home1}/>
             </Switch>
         </BrowserRouter>
     )

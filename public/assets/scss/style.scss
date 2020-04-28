@@ -1,0 +1,245 @@
+/*------------------------------------
+
+    Theme Name  : Aion
+    Theme URI   : http://demo.afracode.com/aion
+    Description : Aion - React Degital Agency Template
+    Author Name : Afracode
+    Author URI  : http://afracode.com
+    Version     : 1.0
+
+------------------------------------*/
+/*------------------------------------
+    
+    STYLESHEET INDEXING
+    |
+    |
+    |___ Default Styles
+    |	|
+    |   |___ variables
+    |   |___ mixins
+    |   |___ reset
+    |   |___ typography
+    |   |___ extend
+    |   |___ animations
+    |   |___ shortcode
+    |   |___ spacing
+    |   |___ Helpers
+    |
+    |
+    |___ Structure Styles
+    |	|
+    |   |___ Header
+    |   |___ Footer
+    |   |___ Wrapper
+    |   |___ Sidenav
+    |   |___ Sidebar
+    |   |___ Content
+    |   |___ Container
+    |
+    |
+    |___ Elements Styles
+    |	|
+    |   |___ Box
+    |   |___ List
+    |   |___ Card
+    |   |___ Tabs
+    |   |___ Form
+    |   |___ Title
+    |   |___ Skill
+    |   |___ Block
+    |   |___ Button
+    |   |___ Resume
+    |   |___ Widget
+    |   |___ Divider
+    |   |___ Accordion
+    |   |___ Pagination
+    |   |___ Breadcrumb
+    |   |___ Blockquote
+    |
+    |
+    |___ Sections Styles
+    |	|
+    |   |___ Hero
+    |   |___ About
+    |   |___ Posts
+    |   |___ Users
+    |   |___ Quotes
+    |   |___ Search
+    |   |___ Contact
+    |   |___ Features
+    |   |___ Services
+    |   |___ Comments
+    |   |___ Portfolio
+    |   |___ Testimonials
+    |   |___ Call To Action
+    |   |___ Pricing Tables
+    |
+ 	|
+    |___ Other Styles
+    |   |
+    |   |___ Demo Options
+    |   |___ Theme Preview
+    |
+    |
+    END STYLESHEET INDEXING
+
+------------------------------------*/
+/*------------------------------------
+    Default Styles
+------------------------------------*/
+
+@import "default/variables";
+@import "default/mixins";
+@import "default/reset";
+@import "default/typography";
+@import "default/animations";
+@import "default/shortcode";
+@import "default/spacing";
+@import "default/helpers";
+
+/*------------------------------------
+    Structure Styles
+------------------------------------*/
+
+@import "structure/header";
+@import "structure/footer";
+@import "structure/wrapper";
+@import "structure/sidenav";
+@import "structure/sidebar";
+@import "structure/content";
+@import "structure/container";
+
+/*------------------------------------
+    Elements Styles
+------------------------------------*/
+
+@import "elements/form";
+@import "elements/button";
+
+/*------------------------------------
+    Sections Styles
+------------------------------------*/
+
+@import "sections/hero";
+@import "sections/about";
+@import "sections/posts";
+@import "sections/users";
+@import "sections/quotes";
+@import "sections/search";
+@import "sections/contact";
+@import "sections/features";
+@import "sections/services";
+@import "sections/comments";
+@import "sections/portfolio";
+@import "sections/testimonials";
+@import "sections/call-to-action";
+@import "sections/pricing-tables";
+
+/*------------------------------------
+    Other Styles
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+/*------------------------------------
+    
+------------------------------------*/
+
+/*------------------------------------
+    Elements: Shape
+------------------------------------*/
+
+.el-shape {
+    width: 100%;
+    position: absolute;
+}
+
+// Shape 1
+.el-shape-1 {
+    width: 600px;
+}
+.el-shape-1 .shape {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; 
+    @extend .shadow-left;
+}
+.el-shape-1 .shape,
+.el-shape-1 .shape:before,
+.el-shape-1 .shape:after {
+    display: block;
+    border-radius: 50%;
+    background-color: $primary;
+}
+.el-shape-1 .shape:before,
+.el-shape-1 .shape:after {
+    content: "";
+    position: absolute;
+    @extend .display-center;
+    background-color: $white;
+}
+.el-shape-1 .shape:before {
+    width: 72%;
+    height: 72%;
+    opacity: 0.1;
+}
+.el-shape-1 .shape:after {
+    width: 36%;
+    height: 36%;
+    opacity: 0.1;
+}
+
+/*------------------------------------
+    Elements: Title
+------------------------------------*/
+
+.el-title p,
+.el-title h1,
+.el-title h2,
+.el-title h3,
+.el-title h4 {
+    margin-bottom: 30px;
+}
+.el-title .label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------
+    Section: Hero
+------------------------------------*/
+.section-hero {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.section-hero p {
+    font-size: 14px;
+}
+
+// Hero 1
+.section-hero-1 p {
+    color: $text-color;
+}
+.section-hero-1 img {
+    max-width: 390px;
+}
