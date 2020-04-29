@@ -57,7 +57,7 @@ a:visited {
     color: inherit;
 }
 a:focus {
-    outline: thin dotted;
+    outline: inherit;
 }
 a:active,
 a:hover {
@@ -183,6 +183,9 @@ ul {
 }
 ul {
     list-style-type: square;
+}
+li {
+    outline: inherit;
 }
 nav ul,
 nav ol {

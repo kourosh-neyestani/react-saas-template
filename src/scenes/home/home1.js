@@ -1,6 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
+
+// Sections
 import About from "../../sections/about/About";
+import Portfolio from "../../sections/portfolio/Portfolio";
+
+// Components
 import Header from "../../components/header/Header";
 import Heading from "../../components/common/Heading";
 
@@ -30,6 +35,7 @@ function Home1() {
                 </Container>
             </div>
             <About />
+            <Portfolio />
         </>
     );
 }

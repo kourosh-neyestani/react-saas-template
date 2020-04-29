@@ -3,7 +3,7 @@ import React from "react";
 function ProgressBar(props) {
     const { label, min, max, percent } = props;
     return (
-        <div class="el-progress">
+        <div className="el-progress">
             {label && <span className="el-progress-label">{label}</span>}
             {percent && <span className="el-progress-count">{`% ${percent}`}</span>}
             <div className="el-progress-line">

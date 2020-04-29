@@ -208,6 +208,64 @@
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+
+.el-tabs {
+    position: relative;
+}
+
+// Tab 1
+.el-tabs-1 {
+    .el-tabs-links {
+        width: 100%;
+        display: block;
+        list-style: none;
+        position: relative;
+        padding: 10px 0 0;
+        margin-bottom: 0 0 20px;
+
+        li {
+            color: $text-color;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+            position: relative;
+            padding-right: 15px;
+            user-select: none;
+            &.active,
+            &.react-tabs__tab--selected {
+                color: $primary;
+            }
+            &.read-more {
+                right: 0;
+                position: absolute;
+                padding-left: 0;
+                padding-right: 3px;
+
+                &:hover {
+                    color: $primary;
+                }
+                .read-more-icon {
+                    top: 4px;
+                    right: -3px;
+                    font-size: 15px;
+                    position: relative;
+                }
+            }
+            &.react-tabs__tab:not(:first-child):before {
+                right: 9px;
+                color: $text-color;
+                content: "\\";
+                font-size: 9px;
+                position: relative;
+            }
+        }
+    }
+}
+
+/*------------------------------------
     Element: Heading
 ------------------------------------*/
 
@@ -223,12 +281,16 @@
         color: $primary;
         display: block;
         font-weight: 600;
+        text-transform: uppercase;
         margin-bottom: 15px;
     }
     &.el-heading-center {
         max-width: $sm;
         text-align: center;
         margin: auto;
+    }
+    &.no-title p {
+        padding-top: 7px;
     }
 }
 
@@ -312,7 +374,7 @@ Section: Hero
         .shape-1,
         .shape-2 {
             width: 60%;
-            opacity: .6;
+            opacity: 0.6;
             padding-top: 30%;
             position: absolute;
         }
@@ -363,5 +425,84 @@ Section: Hero
     }
     .el-progress:last-child {
         margin-bottom: 30px;
+    }
+}
+
+/*------------------------------------
+    Section: Portfolio
+------------------------------------*/
+
+.section-portfolio-1 {
+    .el-heading {
+        margin-bottom: 75px;
+    }
+    .portfolio-item {
+        overflow: hidden;
+        position: relative;
+        padding-top: 100%;
+        margin-bottom: 30px;
+        background-color: $primary;
+
+        p {
+            color: $white;
+            font-size: 14px;
+            margin: 15px 0 9px;
+        }
+        h2,
+        h3,
+        h4 {
+            color: $white;
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+        .icon {
+            top: 6px;
+            left: 1px;
+            font-size: 21px;
+            position: relative;
+        }
+        .portfolio-info {
+            opacity: 0;
+            z-index: 3;
+            text-align: center;
+            transition: opacity 600ms;
+            @extend .display-center;
+        }
+        .portfolio-image {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 600ms;
+        }
+        &:hover .portfolio-info {
+            opacity: 1;
+        }
+        &:hover .portfolio-image {
+            opacity: 0.6;
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
+
+/*------------------------------------
+    Test
+------------------------------------*/
+
+.section {
+    border-bottom: 1px solid #ccc;
+}
+.el-tabs .react-tabs__tab-panel--selected {
+    animation: fadeIn 450ms linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
