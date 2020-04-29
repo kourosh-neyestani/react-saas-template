@@ -136,6 +136,9 @@
 .overlay-image {
     @include overlay('image');
 }
+.overlay-pattern {
+    @include overlay('pattern');
+}
 .overlay-gradient {
     @include overlay('gradient');
 }

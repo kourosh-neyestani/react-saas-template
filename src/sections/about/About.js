@@ -5,7 +5,8 @@ import ProgressBar from "../../components/common/ProgressBar";
 
 function About() {
     return (
-        <div className="section section-about section-about-1">
+        <div className="section section-about section-about-1 overlay-pattern">
+            <span className="bg-pattern bg-patline-1"></span>
             <div className="display-spacing">
                 <Container>
                     <Row>

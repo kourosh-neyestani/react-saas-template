@@ -63,14 +63,22 @@
             @extend .display-screen;
         }
     } @else if ($type == "pattern") {
+        .bg-pattern {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
         .bg-pattern-1 {
+            position: absolute;
             background: repeat url("/assets/images/common/pattern-1.png") center center / 9px;
         }
         .bg-pattern-2 {
+            position: absolute;
             background: repeat url("/assets/images/common/pattern-2.png") center center / 9px;
         }
         .bg-patline-1 {
             opacity: 0.6;
+            position: absolute;
             background: repeat-x url("/assets/images/common/patline-1.png") top left;
         }
     }
