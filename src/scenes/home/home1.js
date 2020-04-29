@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-grid-system";
 
 // Sections
 import About from "../../sections/about/About";
+import Plans from "../../sections/plans/Plans";
 import Portfolio from "../../sections/portfolio/Portfolio";
 
 // Components
@@ -36,6 +37,7 @@ function Home1() {
             </div>
             <About />
             <Portfolio />
+            <Plans />
         </>
     );
 }

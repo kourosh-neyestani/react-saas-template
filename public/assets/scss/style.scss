@@ -287,7 +287,7 @@
     &.el-heading-center {
         max-width: $sm;
         text-align: center;
-        margin: auto;
+        margin: 0 auto 100px;
     }
     &.no-title p {
         padding-top: 7px;
@@ -429,6 +429,91 @@ Section: Hero
 }
 
 /*------------------------------------
+Section: Plans
+------------------------------------*/
+
+.section-plans-1 {
+    .price-item {
+        display: inline-block;
+        padding: 25px 25px;
+        margin: 10px 5px;
+        border-radius: 4px;
+        border: 2px solid #fff;
+        background-color: #fff;
+        @extend .shadow-1;
+
+        p {
+            font-size: 12px;
+            line-height: 23px;
+            margin: 0;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1;
+            padding-top: 6px;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 30px 0 25px;
+            margin: 0;
+
+            li {
+                display: block;
+                font-size: .9em;
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+                .icon {
+                    margin-right: 15px;
+
+                    &.true {
+                        color: $success;
+                    }
+                    &.false {
+                        color: $danger;
+                    }
+                }
+            }
+        }
+        .price-tag {
+            padding: 15px 0;
+            border-top: 2px solid rgba(111, 123, 133, 0.18);
+            border-bottom: 2px solid rgba(111, 123, 133, 0.18);
+        }
+        .price {
+            float: left;
+            position: relative;
+
+            .month {
+                top: -6px;
+                display: block;
+                font-size: 12px;
+                padding-right: 9px;
+                position: relative;
+            }
+            .currency {
+                width: 80px;
+                height: 40px;
+                font-size: 30px;
+                font-weight: 300;
+                vertical-align: middle;
+                position: relative;
+                padding: 3px 0 0;
+
+                .sign {
+                    bottom: 0px;
+                    font-size: 14px;
+                    position: relative;
+                    padding-right: 3px;
+                }
+            }
+        }
+    }
+}
+/*------------------------------------
     Section: Portfolio
 ------------------------------------*/
 
@@ -502,4 +587,10 @@ Section: Hero
     to {
         opacity: 1;
     }
+}
+
+
+.section .display-spacing {
+    z-index: 15;
+    position: relative;
 }

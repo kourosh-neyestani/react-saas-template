@@ -64,11 +64,11 @@ function Portfolio() {
         const { title, subtitle, image } = props;
         return (
             <Col xs={6} sm={6} md={4} lg={3} xl={3}>
-                <div class="portfolio-item">
-                    <div class="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
-                    <div class="portfolio-info">
-                        <div class="portfolio-link">
-                            <a href="/assets/images/portfolio/1-1.jpg" class="button button-circle button-circle-md button-light text-primary">
+                <div className="portfolio-item">
+                    <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
+                    <div className="portfolio-info">
+                        <div className="portfolio-link">
+                            <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-circle-md button-light text-primary">
                                 <IoMdSearch className="icon" />
                             </a>
                         </div>

@@ -205,6 +205,9 @@
     Shadow
 ------------------------------------*/
 
+.shadow-1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 .shadow-left {
     box-shadow: -60px 43px 90px rgba(13, 134, 215, 0.18);
 }
