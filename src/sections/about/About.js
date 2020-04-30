@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
+
+// Components
 import Heading from "../../components/common/Heading";
 import ProgressBar from "../../components/common/ProgressBar";
 

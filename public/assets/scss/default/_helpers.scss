@@ -131,16 +131,16 @@
 
 // Overlay
 .overlay-color {
-    @include overlay('color');
+    @include overlay("color");
 }
 .overlay-image {
-    @include overlay('image');
+    @include overlay("image");
 }
 .overlay-pattern {
-    @include overlay('pattern');
+    @include overlay("pattern");
 }
 .overlay-gradient {
-    @include overlay('gradient');
+    @include overlay("gradient");
 }
 
 // Background Colors
@@ -150,9 +150,15 @@
 .bg-secondary {
     background-color: $secondary;
 }
+.bg-dark {
+    background-color: #000;
+}
+.bg-light {
+    background-color: #000;
+}
 @each $i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 100) {
     $j: $i / 10;
-    .bg-dark-#{$i}0  {
+    .bg-dark-#{$i}0 {
         background-color: rgba(0, 0, 0, $j);
     }
 }
@@ -200,7 +206,6 @@
     clear: both;
 }
 
-
 /*------------------------------------
     Shadow
 ------------------------------------*/
@@ -216,4 +221,39 @@
 }
 .shadow-center {
     box-shadow: 0 43px 90px #ccc;
+}
+
+// Grid
+
+.row-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row-0 > * {
+    padding-left: 0;
+    padding-right: 0;
+}
+.row-xs {
+    margin-left: -6px !important;
+    margin-right: -6px !important;
+}
+.row-xs > * {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+.row-sm {
+    margin-left: -9px !important;
+    margin-right: -9px !important;
+}
+.row-sm > * {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+}
+.row-md {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row-md > * {
+    padding-left: 15px;
+    padding-right: 15px;
 }

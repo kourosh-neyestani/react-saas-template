@@ -223,12 +223,12 @@
         list-style: none;
         position: relative;
         padding: 10px 0 0;
-        margin-bottom: 0 0 20px;
+        margin-bottom: 0 0 30px;
 
         li {
             color: $text-color;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 0.9em;
             font-weight: 500;
             display: inline-block;
             position: relative;
@@ -461,7 +461,7 @@ Section: Plans
 
             li {
                 display: block;
-                font-size: .9em;
+                font-size: 0.9em;
 
                 &:not(:last-child) {
                     margin-bottom: 12px;
@@ -513,6 +513,21 @@ Section: Plans
         }
     }
 }
+
+/*------------------------------------
+    Section: Contact
+------------------------------------*/
+
+.section-contact-1 {
+    .el-heading {
+        p,
+        h2,
+        h3 {
+            color: $white;
+        }
+    }
+}
+
 /*------------------------------------
     Section: Portfolio
 ------------------------------------*/
@@ -588,7 +603,6 @@ Section: Plans
         opacity: 1;
     }
 }
-
 
 .section .display-spacing {
     z-index: 15;

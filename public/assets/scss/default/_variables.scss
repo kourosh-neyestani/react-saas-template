@@ -5,37 +5,37 @@
 // Main Colors
 $base-0: #f9f9ff;
 $base-1: #000;
-$base-2: '';
-$base-3: '';
-$primary: #0d13d7;
+$base-2: "";
+$base-3: "";
 $primary: orangered;
+$primary: #f9004d;
 $primary-1: #262bdb;
 $primary-2: #3c41df;
-$secondary: '';
-$secondary-1: '';
-$secondary-2: '';
+$secondary: "";
+$secondary-1: "";
+$secondary-2: "";
 $white: #fff;
 $black: #000;
 
 // Font Family
-$font-family-1: 'Poppins', sans-serif;
-$font-family-2: '';
+$font-family-1: "Poppins", sans-serif;
+$font-family-2: "";
 
 // Grid
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1230px;
-$xs-max: 'screen and (max-width: #{$sm - 1})';
-$xs-min: 'screen and (max-width: #{$sm})';
-$sm-max: 'screen and (max-width: #{$sm - 1})';
-$sm-min: 'screen and (min-width: #{$sm})';
-$md-max: 'screen and (max-width: #{$md - 1})';
-$md-min: 'screen and (min-width: #{$md})';
-$lg-max: 'screen and (max-width: #{$lg - 1})';
-$lg-min: 'screen and (min-width: #{$lg})';
-$xl-max: 'screen and (max-width: #{$xl - 1})';
-$xl-min: 'screen and (min-width: #{$xl})';
+$xs-max: "screen and (max-width: #{$sm - 1})";
+$xs-min: "screen and (max-width: #{$sm})";
+$sm-max: "screen and (max-width: #{$sm - 1})";
+$sm-min: "screen and (min-width: #{$sm})";
+$md-max: "screen and (max-width: #{$md - 1})";
+$md-min: "screen and (min-width: #{$md})";
+$lg-max: "screen and (max-width: #{$lg - 1})";
+$lg-min: "screen and (min-width: #{$lg})";
+$xl-max: "screen and (max-width: #{$xl - 1})";
+$xl-min: "screen and (min-width: #{$xl})";
 
 // Container Width
 $container-xs: 480px;
@@ -45,8 +45,8 @@ $container-lg: 1200px;
 $container-xl: 1800px;
 
 // assets
-$fonts: '../../../fonts';
-$images: '../../../images';
+$fonts: "../../../fonts";
+$images: "../../../images";
 
 $heading-font: $font-family-1;
 $heading-color: $black;
@@ -60,7 +60,6 @@ $h6: 16px;
 
 $theme-color: $primary;
 $border-color: $primary;
-
 
 $space: 100px;
 
