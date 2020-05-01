@@ -9,6 +9,9 @@ function Contact() {
         <section className="section section-contact section-contact-1">
             <Container fluid>
                 <Row>
+                    <Col xl={6} className="bg-primary">
+                        <div className="display-spacing"></div>
+                    </Col>
                     <Col xl={6} className="bg-dark">
                         <div className="display-spacing">
                             <div className="max-w-576 div-center">
@@ -23,7 +26,7 @@ function Contact() {
                                         <Col xs={12} sm={12} md={6}>
                                             <div className="form-item form-item-input">
                                                 <input type="email" id="form-item-email" placeholder="E-Mail" />
-                                                <label for="form-item-email"></label>
+                                                <label htmlFor="form-item-email"></label>
                                             </div>
                                         </Col>
                                         <Col xs={12} sm={12} md={12}>
@@ -40,9 +43,6 @@ function Contact() {
                                 </form>
                             </div>
                         </div>
-                    </Col>
-                    <Col xl={6} className="bg-primary">
-                        <div className="display-spacing"></div>
                     </Col>
                 </Row>
             </Container>

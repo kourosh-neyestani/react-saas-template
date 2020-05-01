@@ -138,6 +138,57 @@
 /*------------------------------------
     Other Styles
 ------------------------------------*/
+
+.slick-slider .slick-dots {
+    position: relative;
+
+    li {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid;
+
+        &.slick-active {
+            background-color: $base-0;
+
+            button {
+                &:before,
+                &:after {
+                    color: transparent;
+                }
+            }
+        }
+    }
+    button {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+
+        &:before,
+        &:after {
+            color: transparent;
+        }
+    }
+}
+.slick-slider {
+    &.light .slick-dots li {
+        border-color: $base-0;
+
+        &.slick-active {
+            background-color: $base-0;
+        }
+    }
+    &.dark .slick-dots li {
+        border-color: $base-1;
+
+        &.slick-active {
+            background-color: $base-1;
+        }
+    }
+}
+
 /*------------------------------------
     
 ------------------------------------*/
@@ -262,6 +313,26 @@
                 position: relative;
             }
         }
+    }
+}
+
+/*------------------------------------
+    Element: Counter
+------------------------------------*/
+
+.el-counter {
+    color: $base-0;
+
+    .el-counter-count {
+        display: block;
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+    .el-counter-title {
+        opacity: 0.75;
+        display: block;
+        margin-bottom: 30px;
     }
 }
 
@@ -514,6 +585,47 @@ Section: Plans
     }
 }
 
+/*------------------------------------
+    Section: Quotes
+------------------------------------*/
+
+.section-quotes-1 {
+    .quote-item {
+        p {
+            color: $base-0;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 45px;
+        }
+        h5 {
+            color: $base-0;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        h6 {
+            color: $base-0;
+            opacity: 0.75;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 0;
+        }
+        .icon {
+            color: $base-0;
+            display: block;
+            font-size: 36px;
+            margin: 0 auto 30px;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+        }
+    }
+}
 /*------------------------------------
     Section: Contact
 ------------------------------------*/
