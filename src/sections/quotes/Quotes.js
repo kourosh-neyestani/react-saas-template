@@ -18,7 +18,9 @@ function Quotes() {
         <section className="section section-quotes section-quotes-1">
             <Container fluid>
                 <Row>
-                    <Col xl={6} className="bg-dark">
+                    <Col xl={6} className="bg-dark overlay-color overlay-pattern overlay-image  pr-0 pl-0" style={{ backgroundImage: `url(/assets/images/contact/1-1.jpg)` }}>
+                        <span class="bg-pattern bg-pattern-3" />
+                        <span class="bg-color bg-dark-70" />
                         <div className="display-table">
                             <div className="display-content">
                                 <div className="max-w-576 div-center text-center">
@@ -46,7 +48,7 @@ function Quotes() {
                             </div>
                         </div>
                     </Col>
-                    <Col xl={6} className="bg-primary">
+                    <Col xl={6} className="bg-primary pr-0 pl-0">
                         <div className="display-spacing">
                             <Slider {...sliderSettings} className="light">
                                 <div className="slider-item">

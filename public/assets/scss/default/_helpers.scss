@@ -211,7 +211,11 @@
 ------------------------------------*/
 
 .shadow-1 {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+
+    &:hover {
+        box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+    }
 }
 .shadow-left {
     box-shadow: -60px 43px 90px rgba(13, 134, 215, 0.18);
@@ -226,12 +230,12 @@
 // Grid
 
 .row-0 {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 .row-0 > * {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .row-xs {
     margin-left: -6px !important;
@@ -256,4 +260,22 @@
 .row-md > * {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.test-1 {
+    background-image: -webkit-linear-gradient(-140deg, #83f3f4 0%, #70b6fe 100%);
+}
+.test-2 {
+    background-image: -webkit-linear-gradient(-140deg, #f483a3 0%, #c670fe 100%);
+}
+.test-3 {
+    background-image: -webkit-linear-gradient(-140deg, #f0f483 0%, #fec070 100%);
+}
+.test-4 {
+    background-image: -webkit-linear-gradient(-140deg, #5cf77d 0%, #70c7fe 100%);
+}
+
+
+.shadow-circle {
+box-shadow: 0px 20px 30px 0px rgba(172,20,46,0.24);
 }

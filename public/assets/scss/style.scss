@@ -508,7 +508,6 @@ Section: Plans
         display: inline-block;
         padding: 25px 25px;
         margin: 10px 5px;
-        border-radius: 4px;
         border: 2px solid #fff;
         background-color: #fff;
         @extend .shadow-1;
@@ -636,6 +635,9 @@ Section: Plans
         h2,
         h3 {
             color: $white;
+        }
+        p {
+            font-weight: 600;
         }
     }
 }

@@ -16,7 +16,7 @@ function Home1() {
     return (
         <>
             <Header />
-            <div className="section section-hero section-hero-1">
+            <div className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero-1-1.jpg)` }}>
                 <Container>
                     <Row>
                         <Col xl={6}>

@@ -32,7 +32,7 @@ function About() {
                                     <li><FaTimes className="icon false"/> 100 Email Account</li>
                                     <li><FaTimes className="icon false"/> 10 Free Domain Names</li>
                                 </ul>
-                                <button type="button" className="button button-block button-md button-radius button-primary">BUY NOW</button>
+                                <button type="button" className="button button-block button-md button-radius button-primary">Buy Now</button>
                             </div>
                         </Col>
                         <Col xl={4}>
@@ -54,7 +54,7 @@ function About() {
                                     <li><FaCheck className="icon true   "/> 100 Email Account</li>
                                     <li><FaTimes className="icon false"/> 10 Free Domain Names</li>
                                 </ul>
-                                <button type="button" className="button button-block button-md button-radius button-dark">BUY NOW</button>
+                                <button type="button" className="button button-block button-md button-radius button-dark">Buy Now</button>
                             </div>
                         </Col>
                         <Col xl={4}>
@@ -76,7 +76,7 @@ function About() {
                                     <li><FaCheck className="icon true"/> 100 Email Account</li>
                                     <li><FaCheck className="icon true"/> 10 Free Domain Names</li>
                                 </ul>
-                                <button type="button" className="button button-block button-md button-radius button-primary">BUY NOW</button>
+                                <button type="button" className="button button-block button-md button-radius button-primary">Buy Now</button>
                             </div>
                         </Col>
                     </Row>
