@@ -7,8 +7,7 @@ import Heading from "../../components/common/Heading";
 
 function About() {
     return (
-        <div className="section section-plans section-plans-1 overlay-pattern">
-            <span className="bg-pattern bg-patline-1"></span>
+        <div className="section section-plans section-plans-1">
             <div className="display-spacing">
                 <Heading position="center" label="About Me" title="Our Professional Team gives you Best Service and Excellent Support." />
                 <Container>

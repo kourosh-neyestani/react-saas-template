@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import CountUp from "react-countup";
 import { Container, Row, Col } from "react-grid-system";
 import { FaQuoteRight } from "react-icons/fa";
 
@@ -27,19 +28,19 @@ function Quotes() {
                                     <div className="el-counter">
                                         <Row className="row-0">
                                             <Col xs={6} sm={6}>
-                                                <span className="el-counter-count">780</span>
+                                                <CountUp start={0} end={78} className="el-counter-count"/>
                                                 <span className="el-counter-title">Projects</span>
                                             </Col>
                                             <Col xs={6} sm={6}>
-                                                <span className="el-counter-count">69</span>
+                                                <CountUp start={0} end={69} className="el-counter-count"/>
                                                 <span className="el-counter-title">Projects</span>
                                             </Col>
                                             <Col xs={6} sm={6}>
-                                                <span className="el-counter-count">570</span>
+                                                <CountUp start={0} end={57} className="el-counter-count"/>
                                                 <span className="el-counter-title">Projects</span>
                                             </Col>
                                             <Col xs={6} sm={6}>
-                                                <span className="el-counter-count">360</span>
+                                                <CountUp start={0} end={75} className="el-counter-count"/>
                                                 <span className="el-counter-title">Projects</span>
                                             </Col>
                                         </Row>

@@ -6,6 +6,7 @@ import About from "../../sections/about/About";
 import Plans from "../../sections/plans/Plans";
 import Quotes from "../../sections/quotes/Quotes";
 import Contact from "../../sections/contact/Contact";
+import Features from "../../sections/features/Features";
 import Portfolio from "../../sections/portfolio/Portfolio";
 
 // Components
@@ -37,11 +38,7 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
-            <About />
-            <Portfolio />
-            <Quotes />
-            <Plans />
-            <Contact />
+            <Features />
         </>
     );
 }
