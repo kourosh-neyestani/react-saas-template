@@ -3,8 +3,10 @@ import { Container, Row, Col } from "react-grid-system";
 
 // Sections
 import About from "../../sections/about/About";
+import About2 from "../../sections/about/About2";
 import Plans from "../../sections/plans/Plans";
 import Quotes from "../../sections/quotes/Quotes";
+import Quotes2 from "../../sections/quotes/Quotes2";
 import Contact from "../../sections/contact/Contact";
 import Features from "../../sections/features/Features";
 import Portfolio from "../../sections/portfolio/Portfolio";
@@ -24,7 +26,7 @@ function Home1() {
                             <div className="display-full-screen">
                                 <div className="display-center">
                                     <Heading h1="Creating Easier Solutions" subtitle="Let's Work Together. We can help to develop your business. We provide the best service that comes with the best results." />
-                                    <button type="button" className="button button-radius button-md button-primary">
+                                    <button type="button" className="button button-radius button-lg button-primary">
                                         Sumbit Free Acount
                                     </button>
                                 </div>
@@ -38,7 +40,9 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
+            <About2 />
             <Features />
+            <Quotes2 />
         </>
     );
 }

@@ -189,6 +189,40 @@
     }
 }
 
+// Slider 1
+.el-slider-1 {
+    position: relative;
+
+    .button-arrow {
+        width: 45px;
+        height: 45px;
+        bottom: 0;
+        z-index: 3;
+        display: none;
+        color: #999;
+        line-height: 45px;
+        text-align: center;
+        position: absolute;
+        padding-top: 3px;
+        border: 1px solid #ccc;
+
+        &.button-arrow-left {
+            left: 0;
+        }
+        &.button-arrow-right {
+            left: 50px;
+        }
+        &:hover {
+            color: $black;
+            background-color: $gray;
+        }
+        &:before {
+            content: "";
+            display: none;
+        }
+    }
+}
+
 /*------------------------------------
     
 ------------------------------------*/
@@ -263,18 +297,18 @@
 ------------------------------------*/
 
 .el-tabs {
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
     position: relative;
+    margin-bottom: 0 0 30px;
 }
 
-// Tab 1
+// Tabs 1
 .el-tabs-1 {
     .el-tabs-links {
-        width: 100%;
-        display: block;
-        list-style: none;
-        position: relative;
         padding: 10px 0 0;
-        margin-bottom: 0 0 30px;
 
         li {
             color: $text-color;
@@ -312,6 +346,19 @@
                 font-size: 9px;
                 position: relative;
             }
+        }
+    }
+}
+
+// Tabs 2
+.el-tabs-2 {
+    .el-tabs-links {
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 30px;
         }
     }
 }
@@ -389,7 +436,8 @@
 .el-headline {
     h2 {
         font-size: 45px;
-        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 45px;
     }
 }
 
@@ -532,11 +580,6 @@ Section: Features
 ------------------------------------*/
 
 .section-features-1 {
-
-    h2 {
-        line-height: 1.4;
-        margin-bottom: 100px;
-    }
     .card-item {
         position: relative;
         margin-bottom: 45px;
@@ -757,6 +800,70 @@ Section: Plans
             overflow: hidden;
             border-radius: 50%;
             margin: 0 auto 30px;
+        }
+    }
+}
+
+.section-testimonial-2 {
+    .testimonial-image {
+        position: relative;
+        padding-right: 30px;
+
+        .icon {
+            top: 20px;
+            left: 20px;
+            color: $blue;
+            font-size: 60px;
+            position: relative;
+        }
+        .circle {
+            height: 100%;
+            position: relative;
+
+            .image {
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: absolute;
+                padding-top: 100%;
+                border-top-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+        }
+    }
+    .testimonial-item {
+        border: 0;
+        outline: 0;
+        padding-bottom: 60px;
+        
+        p {
+            &:before,
+            &:after {
+                content: '"';
+            }
+        }
+        div {
+            position: relative;
+            padding-left: 63px;
+            margin-bottom: 30px;
+            img {
+                top: 0;
+                left: 0;
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                border-radius: 50%;
+            }
+            .role {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 30px;
+            }
+            .name {
+                display: block;
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
         }
     }
 }
