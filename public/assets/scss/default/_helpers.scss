@@ -226,6 +226,9 @@
 .shadow-center {
     box-shadow: 0 43px 90px #ccc;
 }
+.shadow-3 {
+    box-shadow: 0 0 50px 0 rgba(64, 1, 4, 0.06);
+}
 
 // Grid
 
@@ -275,7 +278,25 @@
     background-image: -webkit-linear-gradient(-140deg, #5cf77d 0%, #70c7fe 100%);
 }
 
-
 .shadow-circle {
-box-shadow: 0px 20px 30px 0px rgba(172,20,46,0.24);
+    box-shadow: 0px 20px 30px 0px rgba(172, 20, 46, 0.24);
+}
+
+.display-block {
+    display: block;
+}
+
+h1 .display-block,
+h2 .display-block,
+h3 .display-block,
+h4 .display-block,
+h5 .display-block,
+h6 .display-block {
+}
+
+.text-gradient {
+    background-image: linear-gradient(to left, $primary, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }

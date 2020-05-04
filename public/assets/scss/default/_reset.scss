@@ -348,8 +348,11 @@ select {
     cursor: pointer;
 }
 
-
 img {
     max-width: 100%;
     height: auto;
 }
+
+// ::selection {
+//     background-color: $primary;
+// }

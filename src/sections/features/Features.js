@@ -26,54 +26,54 @@ function Features() {
                             <Row className="mb--45">
                                 <Col xl={4}>
                                     <div className="card-item card-item-1">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaRegGem className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Business development</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>
                                 </Col>
                                 <Col xl={4}>
                                     <div className="card-item card-item-2">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaRegEnvelope className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Customer satisfaction</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>
                                 </Col>
                                 <Col xl={4}>
                                     <div className="card-item card-item-3">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaRegCheckSquare className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Marketing & communications</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>
                                 </Col>
                                 <Col xl={4}>
                                     <div className="card-item card-item-4">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaWineGlassAlt className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Design</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>
                                 </Col>
                                 <Col xl={4}>
                                     <div className="card-item card-item-5">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaUserSecret className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Finance</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>
                                 </Col>
                                 <Col xl={4}>
                                     <div className="card-item card-item-6">
-                                        <div className="item-icon">
+                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
                                             <FaUniversity className="icon" />
-                                        </div>
+                                        </button>
                                         <h3>Sales</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur</p>
                                     </div>

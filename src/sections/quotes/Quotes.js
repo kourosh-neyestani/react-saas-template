@@ -20,8 +20,8 @@ function Quotes() {
             <Container fluid>
                 <Row>
                     <Col xl={6} className="bg-dark overlay-color overlay-pattern overlay-image  pr-0 pl-0" style={{ backgroundImage: `url(/assets/images/contact/1-1.jpg)` }}>
-                        <span class="bg-pattern bg-pattern-3" />
-                        <span class="bg-color bg-dark-70" />
+                        <span className="bg-pattern bg-pattern-3" />
+                        <span className="bg-color bg-dark-70" />
                         <div className="display-table">
                             <div className="display-content">
                                 <div className="max-w-576 div-center text-center">

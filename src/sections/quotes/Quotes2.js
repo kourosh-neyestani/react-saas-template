@@ -16,7 +16,7 @@ function Quotes2() {
                         <Col xl={5}>
                             <div className="testimonial-image">
                                 <div className="circle">
-                                    <div className="image overlay-image" style={{backgroundImage: `url(/assets/images/testimonial/2.jpg)`}}></div>
+                                    <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/testimonial/2.jpg)` }}></div>
                                 </div>
                                 <FaQuoteLeft className="icon" />
                             </div>
@@ -24,9 +24,7 @@ function Quotes2() {
                         <Col xl={7}>
                             <div className="el-headline">
                                 <h2>
-                                    <span className="fw-100">Testimonal</span>
-                                    <br />
-                                    <span className="fw-100">our</span> Happy Users
+                                    What our<span className="display-block">Clients say</span>
                                 </h2>
                             </div>
                             <Slider1 className="el-slider-1">

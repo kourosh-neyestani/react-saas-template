@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
+import { FaArrowRight } from "react-icons/fa";
 
 // Sections
 import About from "../../sections/about/About";
@@ -9,6 +10,8 @@ import Quotes from "../../sections/quotes/Quotes";
 import Quotes2 from "../../sections/quotes/Quotes2";
 import Contact from "../../sections/contact/Contact";
 import Features from "../../sections/features/Features";
+import Features2 from "../../sections/features/Features2";
+import Features3 from "../../sections/features/Features3";
 import Portfolio from "../../sections/portfolio/Portfolio";
 
 // Components
@@ -40,9 +43,99 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
+            <About />
             <About2 />
-            <Features />
+            <Plans />
+            <Quotes />
             <Quotes2 />
+            <Contact />
+            <Portfolio />
+            <Features />
+            <Features2 />
+            <Features3 />
+            <section className="section">
+                <div className="display-spacing">
+                    <Container>
+                        <header className="el-headline">
+                            <h2>
+                                Explore by <span className="display-block">Our Category</span>
+                            </h2>
+                            <button type="button" className="el-headline-link">
+                                <span>Explore More</span>
+                                <FaArrowRight className="icon" />
+                            </button>
+                        </header>
+                    </Container>
+                </div>
+            </section>
+            <section className="section">
+                <div className="display-spacing">
+                    <Container>
+                        <header className="el-headline">
+                            <h2>Testimonal</h2>
+                            <p>
+                                Let's Work Together. We can help to develop your business.
+                                <br /> We provide the best service that comes with the best results.
+                            </p>
+                            <button type="button" className="el-headline-link">
+                                <span>Explore More</span>
+                                <FaArrowRight className="icon" />
+                            </button>
+                        </header>
+                    </Container>
+                </div>
+            </section>
+            <section className="section">
+                <div className="display-spacing">
+                    <Container>
+                        <header className="el-headline center">
+                            <h2>Testimonal</h2>
+                            <p>
+                                Let's Work Together. We can help to develop your business.
+                                <br /> We provide the best service that comes with the best results.
+                            </p>
+                            <button type="button" className="el-headline-link">
+                                <span>Explore More</span>
+                                <FaArrowRight className="icon" />
+                            </button>
+                        </header>
+                    </Container>
+                </div>
+            </section>
+            <section className="section">
+                <div className="display-spacing">
+                    <Container>
+                        <header className="el-headline center">
+                            <h2>
+                                Explore by <span className="display-block">Our Category</span>
+                            </h2>
+                            <p>
+                                Let's Work Together. We can help to develop your business.
+                                <br /> We provide the best service that comes with the best results.
+                            </p>
+                            <button type="button" className="el-headline-link">
+                                <span>Explore More</span>
+                                <FaArrowRight className="icon" />
+                            </button>
+                        </header>
+                    </Container>
+                </div>
+            </section>
+            <section className="section">
+                <div className="display-spacing">
+                    <Container>
+                        <header className="el-headline center">
+                            <h2>
+                                Explore by <span className="display-block">Our Category</span>
+                            </h2>
+                            <button type="button" className="el-headline-link">
+                                <span>Explore More</span>
+                                <FaArrowRight className="icon" />
+                            </button>
+                        </header>
+                    </Container>
+                </div>
+            </section>
         </>
     );
 }
