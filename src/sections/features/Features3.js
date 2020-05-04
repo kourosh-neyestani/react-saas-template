@@ -52,7 +52,7 @@ function Features3() {
                 <Container>
                     <header className="el-headline">
                         <h2>
-                            Explore by <span className="display-block">our Category</span>
+                            Discover<span className="display-block">our Services</span>
                         </h2>
                         <button type="button" className="el-headline-link">
                             <span>Explore More</span>

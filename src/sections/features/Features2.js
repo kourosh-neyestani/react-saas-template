@@ -44,7 +44,7 @@ function Features2() {
                         <Col xl={6} className="column">
                             <div className="el-headline">
                                 <h2>
-                                    Explore by<span className="display-block">Job category</span>
+                                    Discover<span className="display-block">our Services</span>
                                 </h2>
                                 <p>
                                     Let's Work Together. We can help to develop your business.

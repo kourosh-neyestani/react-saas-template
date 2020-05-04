@@ -49,14 +49,17 @@ function Features() {
                         <Col xl={7}>
                             <div className="el-headline">
                                 <h2>
-                                    Explore <br /> by category
+                                    Discover<span className="display-block">our Services</span>
                                 </h2>
+                                <p>
+                                    Let's Work Together. We can help to develop your business. <br /> We provide the best service that comes with the best results.
+                                </p>
                             </div>
                             <Row className="mb--45">
                                 {featureList.map((value, index) => (
                                     <Col xl={4} key={index}>
                                         <div className="card-item">
-                                        <button className="button button-icon-md button-alt button-alt-primary">{value.icon}</button>
+                                            <button className="button button-icon-md button-alt button-alt-primary">{value.icon}</button>
                                             <h3>{value.title}</h3>
                                             <p>{value.description}</p>
                                         </div>
