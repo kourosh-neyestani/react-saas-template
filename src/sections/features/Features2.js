@@ -1,6 +1,39 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { FaRegGem, FaRegEnvelope, FaRegCheckSquare, FaWineGlassAlt, FaUserSecret, FaUniversity } from "react-icons/fa";
+import { FaUniversity, FaRegGem, FaBullhorn, FaChartLine, FaMobileAlt, FaDesktop } from "react-icons/fa";
+
+const featureList = [
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaDesktop className="icon" />,
+    },
+    {
+        title: "Mobile App Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaMobileAlt className="icon" />,
+    },
+    {
+        title: "Marketing & Advertising",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaBullhorn className="icon" />,
+    },
+    {
+        title: "Business Plan Strategy",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaChartLine className="icon" />,
+    },
+    {
+        title: "Customer Satisfaction",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaUniversity className="icon" />,
+    },
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaRegGem className="icon" />,
+    },
+];
 
 function Features2() {
     return (
@@ -19,72 +52,15 @@ function Features2() {
                                 </p>
                             </div>
                         </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-1">
-                                    <FaRegGem className="icon" />
+                        {featureList.map((value, index) => (
+                            <Col xl={3} className="column">
+                                <div className="card-item card-item-1">
+                                    <button className="button button-circle button-icon-lg button-alt button-alt-primary">{value.icon}</button>
+                                    <h3>{value.title}</h3>
+                                    <p>{value.description}</p>
                                 </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-2">
-                                    <FaRegEnvelope className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-3">
-                                    <FaRegCheckSquare className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-4">
-                                    <FaWineGlassAlt className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-5">
-                                    <FaUserSecret className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-6">
-                                    <FaUniversity className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
+                            </Col>
+                        ))}
                     </Row>
                 </Container>
             </div>

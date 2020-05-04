@@ -1,6 +1,49 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { FaRegGem, FaRegEnvelope, FaRegCheckSquare, FaWineGlassAlt, FaUserSecret, FaUniversity, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaUniversity, FaRegGem, FaBullhorn, FaChartLine, FaMobileAlt, FaDesktop, FaBullseye, FaHeart } from "react-icons/fa";
+
+const featureList = [
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaDesktop className="icon" />,
+    },
+    {
+        title: "Mobile App Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaMobileAlt className="icon" />,
+    },
+    {
+        title: "Marketing & Advertising",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaBullhorn className="icon" />,
+    },
+    {
+        title: "Business Plan Strategy",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaChartLine className="icon" />,
+    },
+    {
+        title: "Customer Satisfaction",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaUniversity className="icon" />,
+    },
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaRegGem className="icon" />,
+    },
+    {
+        title: "Marketing & Reporting",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaBullseye className="icon" />,
+    },
+    {
+        title: "Social Media Management",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaHeart className="icon" />,
+    },
+];
 
 function Features3() {
     return (
@@ -17,94 +60,15 @@ function Features3() {
                         </button>
                     </header>
                     <Row className="mb--30">
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-1">
-                                    <FaRegGem className="icon" />
+                        {featureList.map((value, index) => (
+                            <Col xl={3} className="column" key={index}>
+                                <div className="card-item">
+                                    <button className="button button-circle button-icon-lg button-alt button-alt-primary">{value.icon}</button>
+                                    <h3>{value.title}</h3>
+                                    <p>{value.description}</p>
                                 </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-1">
-                                    <FaRegGem className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-1">
-                                    <FaRegGem className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-2">
-                                    <FaRegEnvelope className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-3">
-                                    <FaRegCheckSquare className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-4">
-                                    <FaWineGlassAlt className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-5">
-                                    <FaUserSecret className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
-                        <Col xl={3} className="column">
-                            <div className="card-item card-item-1">
-                                <div className="icon-holder button-alt button-alt-primary button-alt-6">
-                                    <FaUniversity className="icon" />
-                                </div>
-                                <h3>
-                                    Design & <span className="display-block">Development</span>
-                                </h3>
-                                <span className="subtitle">15k job voccary</span>
-                            </div>
-                        </Col>
+                            </Col>
+                        ))}
                     </Row>
                 </Container>
             </div>

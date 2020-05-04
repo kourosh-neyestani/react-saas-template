@@ -1,10 +1,39 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { FaRegGem, FaRegEnvelope, FaRegCheckSquare, FaWineGlassAlt, FaUserSecret, FaUniversity, FaSyncAlt } from "react-icons/fa";
+import { FaUniversity, FaRegGem, FaBullhorn, FaChartLine, FaMobileAlt, FaDesktop } from "react-icons/fa";
 
-// Components
-import Heading from "../../components/common/Heading";
-import ProgressBar from "../../components/common/ProgressBar";
+const featureList = [
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaDesktop className="icon" />,
+    },
+    {
+        title: "Mobile App Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaMobileAlt className="icon" />,
+    },
+    {
+        title: "Marketing & Advertising",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaBullhorn className="icon" />,
+    },
+    {
+        title: "Business Plan Strategy",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaChartLine className="icon" />,
+    },
+    {
+        title: "Customer Satisfaction",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaUniversity className="icon" />,
+    },
+    {
+        title: "Website Development",
+        description: "Lorem ipsum dolor sit amet consectetur",
+        icon: <FaRegGem className="icon" />,
+    },
+];
 
 function Features() {
     return (
@@ -24,60 +53,15 @@ function Features() {
                                 </h2>
                             </div>
                             <Row className="mb--45">
-                                <Col xl={4}>
-                                    <div className="card-item card-item-1">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaRegGem className="icon" />
-                                        </button>
-                                        <h3>Business development</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
-                                <Col xl={4}>
-                                    <div className="card-item card-item-2">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaRegEnvelope className="icon" />
-                                        </button>
-                                        <h3>Customer satisfaction</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
-                                <Col xl={4}>
-                                    <div className="card-item card-item-3">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaRegCheckSquare className="icon" />
-                                        </button>
-                                        <h3>Marketing & communications</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
-                                <Col xl={4}>
-                                    <div className="card-item card-item-4">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaWineGlassAlt className="icon" />
-                                        </button>
-                                        <h3>Design</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
-                                <Col xl={4}>
-                                    <div className="card-item card-item-5">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaUserSecret className="icon" />
-                                        </button>
-                                        <h3>Finance</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
-                                <Col xl={4}>
-                                    <div className="card-item card-item-6">
-                                        <button type="button" className="button button-icon-md button-alt button-alt-primary">
-                                            <FaUniversity className="icon" />
-                                        </button>
-                                        <h3>Sales</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                                    </div>
-                                </Col>
+                                {featureList.map((value, index) => (
+                                    <Col xl={4} key={index}>
+                                        <div className="card-item">
+                                        <button className="button button-icon-md button-alt button-alt-primary">{value.icon}</button>
+                                            <h3>{value.title}</h3>
+                                            <p>{value.description}</p>
+                                        </div>
+                                    </Col>
+                                ))}
                             </Row>
                         </Col>
                     </Row>

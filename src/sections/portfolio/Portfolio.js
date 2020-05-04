@@ -65,15 +65,17 @@ function Portfolio() {
         return (
             <Col xs={6} sm={6} md={4} lg={3} xl={3}>
                 <div className="portfolio-item">
-                    <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
-                    <div className="portfolio-info">
-                        <div className="portfolio-link">
-                            <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-circle-md button-light text-primary">
-                                <IoMdSearch className="icon" />
-                            </a>
+                    <div className="portfolio-card">
+                        <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
+                        <div className="portfolio-info">
+                            <div className="portfolio-link">
+                                <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-circle-md button-light text-primary">
+                                    <IoMdSearch className="icon" />
+                                </a>
+                            </div>
+                            <p>{title}</p>
+                            <h4>{subtitle}</h4>
                         </div>
-                        <p>{title}</p>
-                        <h4>{subtitle}</h4>
                     </div>
                 </div>
             </Col>
