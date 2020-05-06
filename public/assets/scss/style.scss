@@ -238,44 +238,44 @@
 ------------------------------------*/
 
 /*------------------------------------
-    Element: Shape
+    Element: circle
 ------------------------------------*/
 
-.el-shape {
+.el-circle {
     width: 100%;
     position: absolute;
 }
 
-// Shape 1
-.el-shape-1 {
+// circle 1
+.el-circle-1 {
     width: 600px;
 }
-.el-shape-1 .shape {
+.el-circle-1 .circle {
     width: 100%;
     padding-top: 100%;
     position: relative;
     @extend .shadow-left;
 }
-.el-shape-1 .shape,
-.el-shape-1 .shape:before,
-.el-shape-1 .shape:after {
+.el-circle-1 .circle,
+.el-circle-1 .circle:before,
+.el-circle-1 .circle:after {
     display: block;
     border-radius: 50%;
     background-color: $primary;
 }
-.el-shape-1 .shape:before,
-.el-shape-1 .shape:after {
+.el-circle-1 .circle:before,
+.el-circle-1 .circle:after {
     content: "";
     position: absolute;
     background-color: $white;
     @extend .display-center;
 }
-.el-shape-1 .shape:before {
+.el-circle-1 .circle:before {
     width: 72%;
     height: 72%;
     opacity: 0.1;
 }
-.el-shape-1 .shape:after {
+.el-circle-1 .circle:after {
     width: 36%;
     height: 36%;
     opacity: 0.1;
@@ -1007,6 +1007,86 @@ Section: Plans
     }
     .row {
         justify-content: center !important;
+    }
+}
+
+/*------------------------------------
+    Element: Shape
+------------------------------------*/
+
+.border-light {
+    border-color: $white;
+}
+.border-dark {
+    border-color: $black;
+}
+.border-primary {
+    border-color: $primary;
+}
+.border-secondary {
+    border-color: $secondary;
+}
+
+.el-shape {
+    display: inline-block;
+    
+    .triangle {
+        width: 0;
+        height: 0;
+        display: inline-block;
+
+        &.xs {
+            border: 10px solid transparent;
+        }
+        &.sm {
+            border: 15px solid transparent;
+        }
+        &.md {
+            border: 20px solid transparent;
+        }
+        &.lg {
+            border: 25px solid transparent;
+        }
+        &.xl {
+            border: 30px solid transparent;
+        }
+        &.xx {
+            border: 45px solid transparent;
+        }
+        &.color-1 {
+            border-left-color: $color-1;
+        }
+        &.color-2 {
+            border-left-color: $color-2;
+        }
+        &.color-3 {
+            border-left-color: $color-3;
+        }
+        &.color-4 {
+            border-left-color: $color-4;
+        }
+        &.color-5 {
+            border-left-color: $color-5;
+        }
+        &.color-6 {
+            border-left-color: $color-6;
+        }
+        &.light {
+            border-left-color: $white;
+        }
+        &.dark {
+            border-left-color: $black;
+        }
+        &.primary {
+            border-left-color: $primary;
+        }
+        &.secondary {
+            border-left-color: $secondary;
+        }
+    }
+    &.el-shape-triangle {
+        width: 0;
+        height: 0;
     }
 }
 

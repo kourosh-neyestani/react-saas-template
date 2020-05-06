@@ -18,13 +18,20 @@ import Portfolio3 from "../../sections/portfolio/Portfolio3";
 import Portfolio5 from "../../sections/portfolio/Portfolio5";
 
 // Components
+import Shape from "../../components/shape/Shape";
 import Header from "../../components/header/Header";
 import Heading from "../../components/common/Heading";
 
 function Home1() {
     return (
         <>
-            <div className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero-1-1.jpg)` }}>
+            <div className="section section-hero section-hero-1 overlay-image">
+                <Shape type="circle" size="xs" className="shadow-1 shape-1" />
+                <Shape type="circle" size="sm" className="shadow-1 shape-2" />
+                <Shape type="circle" size="md" className="shadow-1 shape-3" />
+                <Shape type="circle" size="lg" className="shadow-1 shape-4" />
+                <Shape type="circle" size="xl" className="shadow-1 shape-5" />
+                <Shape type="circle" size="xx" className="shadow-1 shape-6" />
                 <Container>
                     <Row>
                         <Col xl={6}>
@@ -45,6 +52,31 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
+            <section>
+                <div className="display-spacing">
+                    <Shape type="circle" size="xs" className="shadow-1 shape-1" />
+                    <Shape type="circle" size="sm" className="shadow-1 shape-2" />
+                    <Shape type="circle" size="md" className="shadow-1 shape-3" />
+                    <Shape type="circle" size="lg" className="shadow-1 shape-4" />
+                    <Shape type="circle" size="xl" className="shadow-1 shape-5" />
+                    <Shape type="circle" size="xx" className="shadow-1 shape-6" />
+                    <hr />
+                    <Shape type="square" size="xs" className="shadow-1 bg-color-1 shape-7" />
+                    <Shape type="square" size="sm" className="shadow-1 bg-color-2 shape-" />
+                    <Shape type="square" size="md" className="shadow-1 bg-color-3 shape-" />
+                    <Shape type="square" size="lg" className="shadow-1 bg-color-4 shape-" />
+                    <Shape type="square" size="xl" className="shadow-1 bg-color-5 shape-" />
+                    <Shape type="square" size="xx" className="shadow-1 bg-color-6 shape-" />
+                    <hr />
+                    <Shape type="triangle" size="xx" color="color-6" />
+                    <Shape type="triangle" size="xl" color="color-5" />
+                    <Shape type="triangle" size="lg" color="color-4" />
+                    <Shape type="triangle" size="md" color="color-3" />
+                    <Shape type="triangle" size="sm" color="color-2" />
+                    <Shape type="triangle" size="xs" color="color-1" />
+                    <hr />
+                </div>
+            </section>
         </>
     );
 }
