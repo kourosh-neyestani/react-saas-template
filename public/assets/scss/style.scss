@@ -293,46 +293,49 @@
     margin-bottom: 0 0 30px;
 }
 
+.el-headline-link {
+    right: 0;
+    bottom: 3px;
+    position: absolute;
+
+    span {
+        font-weight: 700;
+        display: inline-block;
+        padding-right: 9px;
+    }
+    .icon {
+        top: 2px;
+        color: $primary;
+        font-size: 14px;
+        position: relative;
+    }
+    &:hover {
+        color: $primary;
+    }
+}
+
 // Tabs 1
 .el-tabs-1 {
     .el-tabs-links {
-        padding: 10px 0 0;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto 30px;
 
         li {
-            color: $text-color;
-            cursor: pointer;
-            font-size: 0.9em;
-            font-weight: 500;
             display: inline-block;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
             position: relative;
-            padding-right: 15px;
+            padding: 7px 15px;
+            border-radius: 30px;
             user-select: none;
+            margin-right: 9px;
+            background-color: $gray;
+
             &.active,
             &.react-tabs__tab--selected {
                 color: $primary;
-            }
-            &.read-more {
-                right: 0;
-                position: absolute;
-                padding-left: 0;
-                padding-right: 3px;
-
-                &:hover {
-                    color: $primary;
-                }
-                .read-more-icon {
-                    top: 4px;
-                    right: -3px;
-                    font-size: 15px;
-                    position: relative;
-                }
-            }
-            &.react-tabs__tab:not(:first-child):before {
-                right: 9px;
-                color: $text-color;
-                content: "\\";
-                font-size: 9px;
-                position: relative;
             }
         }
     }
@@ -871,10 +874,8 @@ Section: Plans
     Section: Portfolio
 ------------------------------------*/
 
-.section-portfolio-1 {
-    .el-heading {
-        margin-bottom: 75px;
-    }
+.section-portfolio-1,
+.section-portfolio-2 {
     .portfolio-item {
         @extend .shadow-3;
 
@@ -899,9 +900,9 @@ Section: Plans
                 margin-bottom: 0;
             }
             .icon {
-                top: 6px;
-                left: 1px;
-                font-size: 21px;
+                top: 3px;
+                left: 0;
+                font-size: 14px;
                 position: relative;
             }
             .portfolio-info {
@@ -927,6 +928,9 @@ Section: Plans
                 transform: scale(1.2, 1.2);
             }
         }
+    }
+    .row {
+        justify-content: center !important;
     }
 }
 

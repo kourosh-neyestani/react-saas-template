@@ -1,29 +1,31 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { IoIosArrowRoundForward, IoMdSearch } from "react-icons/io";
-
-// Components
-import Heading from "../../components/common/Heading";
+import { FaRegPaperPlane } from "react-icons/fa";
 
 function Portfolio() {
     return (
-        <div className="section section-portfolio section-portfolio-1">
+        <section className="section section-portfolio section-portfolio-1">
             <div className="display-spacing">
                 <Container>
-                    <Heading position="center" label="Portfolio" title="Our Best Popular Services for your Successful Business." subtitle="" />
+                    <header className="el-headline center">
+                        <h2>
+                            Explore<span className="display-block">Latest Works</span>
+                        </h2>
+                        <p>
+                            Let's Work Together. We can help to develop your business. <br />
+                            We provide the best service that comes with the best results.
+                        </p>
+                    </header>
                     <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
                         <TabList className="el-tabs-links">
                             <Tab>All Works</Tab>
                             <Tab>Web Design</Tab>
                             <Tab>Mobile Apps</Tab>
                             <Tab>Branding</Tab>
-                            <li className="read-more">
-                                More Portfolio <IoIosArrowRoundForward className="read-more-icon" />
-                            </li>
                         </TabList>
                         <TabPanel>
-                            <Row className="mb--30">
+                            <Row className="row mb--30">
                                 <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-1.jpg" />
                                 <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-2.jpg" />
                                 <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-3.jpg" />
@@ -35,21 +37,21 @@ function Portfolio() {
                             </Row>
                         </TabPanel>
                         <TabPanel>
-                            <Row className="mb--30">
+                            <Row className="row mb--30">
                                 <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-1.jpg" />
                                 <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-4.jpg" />
                                 <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-7.jpg" />
                             </Row>
                         </TabPanel>
                         <TabPanel>
-                            <Row className="mb--30">
+                            <Row className="row mb--30">
                                 <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-2.jpg" />
                                 <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-5.jpg" />
                                 <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-8.jpg" />
                             </Row>
                         </TabPanel>
                         <TabPanel>
-                            <Row className="mb--30">
+                            <Row className="row mb--30">
                                 <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-3.jpg" />
                                 <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-6.jpg" />
                             </Row>
@@ -57,7 +59,7 @@ function Portfolio() {
                     </Tabs>
                 </Container>
             </div>
-        </div>
+        </section>
     );
 
     function Item(props) {
@@ -69,8 +71,8 @@ function Portfolio() {
                         <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
                         <div className="portfolio-info">
                             <div className="portfolio-link">
-                                <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-circle-md button-light text-primary">
-                                    <IoMdSearch className="icon" />
+                                <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-icon-md button-light text-primary">
+                                    <FaRegPaperPlane className="icon" />
                                 </a>
                             </div>
                             <p>{title}</p>

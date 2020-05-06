@@ -13,6 +13,8 @@ import Features from "../../sections/features/Features";
 import Features2 from "../../sections/features/Features2";
 import Features3 from "../../sections/features/Features3";
 import Portfolio from "../../sections/portfolio/Portfolio";
+import Portfolio2 from "../../sections/portfolio/Portfolio2";
+import Portfolio3 from "../../sections/portfolio/Portfolio3";
 
 // Components
 import Header from "../../components/header/Header";
@@ -43,16 +45,9 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
-            <About />
-            <About2 />
-            <Plans />
-            <Quotes />
-            <Quotes2 />
-            <Contact />
             <Portfolio />
-            <Features />
-            <Features2 />
-            <Features3 />
+            <Portfolio2 />
+            <Portfolio3 />
         </>
     );
 }
