@@ -6,3 +6,50 @@
         background-position: 0 0;
     }
 }
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0px #4444ee, 0 0 0 0px #fff, 0 0 0 0px #4444ee, 0 0 0 0px #fff, 0 0 0 0px #4444ee, 0 0 0 0px #fff, 0 0 0 0px #4444ee, 0 0 0 0px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 15px #4444ee, 0 0 0 17px rgba(255, 255, 255, 0), 0 0 0 40px #4444ee, 0 0 0 42px rgba(255, 255, 255, 0), 0 0 0 70px #4444ee, 0 0 0 72px rgba(255, 255, 255, 0), 0 0 0 105px #4444ee, 0 0 0 107px rgba(255, 255, 255, 0);
+    }
+}
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rumbleinthejungle {
+    0% {
+        transform: translatex(0);
+    }
+    25% {
+        transform: translatex(-5px);
+    }
+    50% {
+        transform: translatex(0);
+    }
+    75% {
+        transform: translatex(5px);
+    }
+    100% {
+        transform: translatex(0);
+    }
+}
+
+@keyframes wave-animate {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        transform-origin: center;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+        transform-origin: center;
+    }
+}

@@ -13,6 +13,7 @@ import "./index.scss";
 // Shortcodes
 import HeadlinePage from "./blocks/HeadlinePage";
 import FeaturesPage from "./blocks/FeaturesPage";
+import PortfolioBlock from "./blocks/PortfolioBlock";
 
 const Root = () => {
     return (
@@ -24,6 +25,7 @@ const Root = () => {
                 {/* Shortcodes */}
                 <Route exact path={`${process.env.PUBLIC_URL}/titles`} component={HeadlinePage} />
                 <Route exact path={`${process.env.PUBLIC_URL}/features`} component={FeaturesPage} />
+                <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={PortfolioBlock} />
             </Switch>
         </BrowserRouter>
     );

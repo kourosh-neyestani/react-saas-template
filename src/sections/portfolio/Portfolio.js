@@ -1,88 +1,85 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { FaRegPaperPlane } from "react-icons/fa";
+import { FaArrowRight, FaSyncAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const portfolioList = [
+    {
+        tag: "Development",
+        title: "Best product landing page built with ReactJS",
+        image: "/assets/images/portfolio/2-1.jpg",
+    },
+    {
+        tag: "Development",
+        title: "Best product landing page built with ReactJS",
+        image: "/assets/images/portfolio/2-2.jpg",
+    },
+    {
+        tag: "Development",
+        title: "Multi-Purpose website built with ReactJS",
+        image: "/assets/images/portfolio/2-3.jpg",
+    },
+    {
+        tag: "Development",
+        title: "Creative Agency & Business HTML Template",
+        image: "/assets/images/portfolio/2-4.jpg",
+    },
+    {
+        tag: "Development",
+        title: "Best portfolio template built with ReactJS",
+        image: "/assets/images/portfolio/2-5.jpg",
+    },
+    {
+        tag: "Development",
+        title: "The personal template built with ReactJS",
+        image: "/assets/images/portfolio/2-6.jpg",
+    },
+];
 
 function Portfolio() {
     return (
         <section className="section section-portfolio section-portfolio-1">
             <div className="display-spacing">
                 <Container>
-                    <header className="el-headline center">
+                    <header className="el-headline">
                         <h2>
-                            Explore<span className="display-block">Latest Works</span>
+                            Discover<span className="display-block">our Portfolio</span>
                         </h2>
-                        <p>
-                            Let's Work Together. We can help to develop your business. <br />
-                            We provide the best service that comes with the best results.
-                        </p>
+                        <button type="button" className="el-headline-link">
+                            <span>Explore More</span>
+                            <FaArrowRight className="icon" />
+                        </button>
                     </header>
-                    <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
-                        <TabList className="el-tabs-links">
-                            <Tab>All Works</Tab>
-                            <Tab>Web Design</Tab>
-                            <Tab>Mobile Apps</Tab>
-                            <Tab>Branding</Tab>
-                        </TabList>
-                        <TabPanel>
-                            <Row className="row mb--30">
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-1.jpg" />
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-2.jpg" />
-                                <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-3.jpg" />
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-4.jpg" />
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-5.jpg" />
-                                <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-6.jpg" />
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-7.jpg" />
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-8.jpg" />
-                            </Row>
-                        </TabPanel>
-                        <TabPanel>
-                            <Row className="row mb--30">
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-1.jpg" />
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-4.jpg" />
-                                <Item title="Crearive Design" subtitle="Web Design" image="/assets/images/portfolio/1-7.jpg" />
-                            </Row>
-                        </TabPanel>
-                        <TabPanel>
-                            <Row className="row mb--30">
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-2.jpg" />
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-5.jpg" />
-                                <Item title="Crearive Design" subtitle="Mobile Apps" image="/assets/images/portfolio/1-8.jpg" />
-                            </Row>
-                        </TabPanel>
-                        <TabPanel>
-                            <Row className="row mb--30">
-                                <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-3.jpg" />
-                                <Item title="Crearive Design" subtitle="Branding" image="/assets/images/portfolio/1-6.jpg" />
-                            </Row>
-                        </TabPanel>
-                    </Tabs>
+                    <Row>
+                        {portfolioList.map((value, index) => (
+                            <Col xl={4} key={index}>
+                                <div className="portfolio-item mb-30">
+                                    <div className="image-holder">
+                                        <div className="image overlay-image" style={{ backgroundImage: `url(${value.image})` }} />
+                                    </div>
+                                    <div className="content">
+                                        <span>{value.tag}</span>
+                                        <Link to={`/portfolio-details`}>
+                                            <h3>{value.title}</h3>
+                                            <button className="button button-lg button-line-light">CASE STUDY</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                    <div className="div-center text-center pt-30">
+                        <Link to={`/portfolio`}>
+                            <button className="button button-circle button-icon-xl button-alt button-alt-primary button-more button-wave" type="button">
+                                <FaSyncAlt className="icon" />
+                                <span className="hover-wave" />
+                            </button>
+                        </Link>
+                    </div>
                 </Container>
             </div>
         </section>
     );
-
-    function Item(props) {
-        const { title, subtitle, image } = props;
-        return (
-            <Col xs={6} sm={6} md={4} lg={3} xl={3}>
-                <div className="portfolio-item">
-                    <div className="portfolio-card">
-                        <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${image})` }} />
-                        <div className="portfolio-info">
-                            <div className="portfolio-link">
-                                <a href="/assets/images/portfolio/1-1.jpg" className="button button-circle button-icon-md button-light text-primary">
-                                    <FaRegPaperPlane className="icon" />
-                                </a>
-                            </div>
-                            <p>{title}</p>
-                            <h4>{subtitle}</h4>
-                        </div>
-                    </div>
-                </div>
-            </Col>
-        );
-    }
 }
 
 export default Portfolio;

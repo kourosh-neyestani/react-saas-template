@@ -15,6 +15,7 @@ import Features3 from "../../sections/features/Features3";
 import Portfolio from "../../sections/portfolio/Portfolio";
 import Portfolio2 from "../../sections/portfolio/Portfolio2";
 import Portfolio3 from "../../sections/portfolio/Portfolio3";
+import Portfolio5 from "../../sections/portfolio/Portfolio5";
 
 // Components
 import Header from "../../components/header/Header";
@@ -23,7 +24,6 @@ import Heading from "../../components/common/Heading";
 function Home1() {
     return (
         <>
-            <Header />
             <div className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(/assets/images/hero-1-1.jpg)` }}>
                 <Container>
                     <Row>
@@ -45,9 +45,6 @@ function Home1() {
                     </Row>
                 </Container>
             </div>
-            <Portfolio />
-            <Portfolio2 />
-            <Portfolio3 />
         </>
     );
 }
