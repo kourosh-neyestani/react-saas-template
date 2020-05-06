@@ -25,13 +25,7 @@ import Heading from "../../components/common/Heading";
 function Home1() {
     return (
         <>
-            <div className="section section-hero section-hero-1 overlay-image">
-                <Shape type="circle" size="xs" className="shadow-1 shape-1" />
-                <Shape type="circle" size="sm" className="shadow-1 shape-2" />
-                <Shape type="circle" size="md" className="shadow-1 shape-3" />
-                <Shape type="circle" size="lg" className="shadow-1 shape-4" />
-                <Shape type="circle" size="xl" className="shadow-1 shape-5" />
-                <Shape type="circle" size="xx" className="shadow-1 shape-6" />
+            <div className="section section-hero section-hero-1 overlay-image" style={{backgroundImage: `url(/assets/images/hero/1-1.jpg)`}}>
                 <Container>
                     <Row>
                         <Col xl={6}>
