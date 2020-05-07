@@ -21,8 +21,8 @@ const blocks = [
         title: "Headline",
     },
     {
-        link: "features",
-        title: "features",
+        link: "service",
+        title: "service",
     },
     {
         link: "about",

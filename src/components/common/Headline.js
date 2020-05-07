@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 function Headline(props) {
-    const { label, title, subtitle, position, className, t1, t2 } = props;
+    const { label, title, link, subtitle, position, className, t1, t2 } = props;
     return (
         <header className={`el-headline el-headline-${position || "side"} ${className}`}>
             <div className="el-headline-label">{label && <span>{label}</span>}</div>
@@ -11,6 +13,14 @@ function Headline(props) {
                     {t1}
                     {t2 && <span className="display-block">{t2}</span>}
                 </h2>
+            )}
+            {link && (
+                <Link to={link}>
+                    <button type="button" className="el-headline-link">
+                        <span>Explore More</span>
+                        <FaArrowRight className="icon" />
+                    </button>
+                </Link>
             )}
             {subtitle && <p>{subtitle}</p>}
         </header>

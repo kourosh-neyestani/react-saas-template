@@ -5,27 +5,21 @@ import * as serviceWorker from "./serviceWorker";
 
 // Scenes
 import Demo from "./scenes/demo/Demo";
-import Home1 from "./scenes/home/home1";
+import Home from "./scenes/home/Home";
+import Home2 from "./scenes/home/Home2";
+import Home3 from "./scenes/home/Home3";
 
 // Stylesheet
 import "./index.scss";
-
-// Shortcodes
-import HeadlinePage from "./blocks/HeadlinePage";
-import FeaturesPage from "./blocks/FeaturesPage";
-import PortfolioBlock from "./blocks/PortfolioBlock";
 
 const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
                 <Route exact path={`${process.env.PUBLIC_URL}/`} component={Demo} />
-                <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home1} />
-
-                {/* Shortcodes */}
-                <Route exact path={`${process.env.PUBLIC_URL}/titles`} component={HeadlinePage} />
-                <Route exact path={`${process.env.PUBLIC_URL}/features`} component={FeaturesPage} />
-                <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={PortfolioBlock} />
+                <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home} />
+                <Route exact path={`${process.env.PUBLIC_URL}/home-2`} component={Home2} />
+                <Route exact path={`${process.env.PUBLIC_URL}/home-3`} component={Home3} />
             </Switch>
         </BrowserRouter>
     );

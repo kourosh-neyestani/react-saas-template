@@ -518,12 +518,29 @@ Section: Hero
 ------------------------------------*/
 
 .section-hero {
-    overflow: hidden;
     position: relative;
     min-height: 100vh;
 
     p {
         margin-bottom: 25px;
+    }
+}
+
+.section-hero-2 {
+    background-color: $gray;
+
+    .hero-image {
+        right: 0;
+        bottom: -90px;
+        width: 50%;
+        height: 100vh;
+        z-index: 11;
+        position: absolute;
+        background-color: red;
+        border-top-left-radius: 30px;
+    }
+    .display-center {
+        z-index: 12;
     }
 }
 
@@ -612,10 +629,10 @@ Section: Hero
 }
 
 /*------------------------------------
-Section: Features
+Section: Service
 ------------------------------------*/
 
-.section-features {
+.section-service {
     .card-item {
         position: relative;
 
@@ -629,8 +646,8 @@ Section: Features
         }
     }
 }
-// Features 1
-.section-features-1 {
+// Service 1
+.section-service-1 {
     .card-item {
         margin-bottom: 45px;
 
@@ -641,9 +658,9 @@ Section: Features
     }
 }
 
-// Features 2 & 3
-.section-features-2,
-.section-features-3 {
+// Service 2 & 3
+.section-service-2,
+.section-service-3 {
     position: relative;
 
     .column {
