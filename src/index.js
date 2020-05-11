@@ -8,6 +8,7 @@ import Demo from "./scenes/demo/Demo";
 import Home from "./scenes/home/Home";
 import Home2 from "./scenes/home/Home2";
 import Home3 from "./scenes/home/Home3";
+import Home4 from "./scenes/home/Home4";
 
 // Stylesheet
 import "./index.scss";
@@ -20,6 +21,7 @@ const Root = () => {
                 <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home} />
                 <Route exact path={`${process.env.PUBLIC_URL}/home-2`} component={Home2} />
                 <Route exact path={`${process.env.PUBLIC_URL}/home-3`} component={Home3} />
+                <Route exact path={`${process.env.PUBLIC_URL}/home-4`} component={Home4} />
             </Switch>
         </BrowserRouter>
     );

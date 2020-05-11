@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 function Headline(props) {
     const { label, title, link, subtitle, position, className, t1, t2 } = props;
     return (
-        <header className={`el-headline el-headline-${position || "side"} ${className}`}>
+        <header className={`el-headline ${position || "side"} ${className}`}>
             <div className="el-headline-label">{label && <span>{label}</span>}</div>
             <div className="el-headline-title">{title && <h2>{title}</h2>}</div>
             {t1 && (

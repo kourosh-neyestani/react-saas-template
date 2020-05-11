@@ -46,7 +46,7 @@ function Shape(props) {
         case "square":
             newStyle = {
                 width: switchSize(size),
-                paddingTop: `100%`,
+                height: switchSize(size),
             };
             break;
         default:

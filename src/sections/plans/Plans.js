@@ -4,12 +4,13 @@ import { FaCheck, FaTimes } from "react-icons/fa";
 
 // Components
 import Heading from "../../components/common/Heading";
+import Headline from "../../components/common/Headline";
 
 function About() {
     return (
         <div className="section section-plans section-plans-1">
             <div className="display-spacing">
-                <Heading position="center" label="About Me" title="Our Professional Team gives you Best Service and Excellent Support." />
+                <Headline position="center" title="Pricing Plans" subtitle="Let's Work Together. We can help to develop your business. We provide the best service that comes with the best results." />
                 <Container>
                     <Row>
                         <Col xl={4}>

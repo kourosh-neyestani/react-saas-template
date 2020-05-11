@@ -4,8 +4,6 @@ import React from "react";
 import Header from "../../components/header/Header";
 
 // Sections
-import Service from "../../sections/service/Service";
-// Sections
 import Hero from "../../sections/hero/Hero";
 import About from "../../sections/about/About";
 import About2 from "../../sections/about/About2";
@@ -19,14 +17,23 @@ import Portfolio2 from "../../sections/portfolio/Portfolio2";
 import Portfolio3 from "../../sections/portfolio/Portfolio3";
 import Portfolio5 from "../../sections/portfolio/Portfolio5";
 
+
 export default (props) => {
     return (
         <>
             <Header />
             <Hero />
-            <Service />
-            <Quotes />
+            <About />
+            <About2 />
+            <About3 />
+            <Contact />
             <Plans />
+            <Quotes />
+            <Quotes2 />
+            <Portfolio />
+            <Portfolio2 />
+            <Portfolio3 />
+            <Portfolio5 />
         </>
     );
 };

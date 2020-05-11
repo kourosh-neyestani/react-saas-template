@@ -115,6 +115,7 @@
 
 @import "elements/form";
 @import "elements/button";
+@import "elements/common";
 
 /*------------------------------------
     Sections Styles
@@ -134,6 +135,40 @@
 @import "sections/testimonials";
 @import "sections/call-to-action";
 @import "sections/pricing-tables";
+
+.section-wave-1 {
+    &:after {
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 20%;
+        content: "";
+        position: absolute;
+        background: no-repeat url("/assets/images/shapes/wave-1.png") bottom center / cover;
+    }
+}
+.section-wave-2 {
+    &:after {
+        left: 0;
+        bottom: -90px;
+        width: 100%;
+        height: 20%;
+        content: "";
+        position: absolute;
+        background: no-repeat url("/assets/images/shapes/wave-2.png") bottom center / cover;
+    }
+}
+.section-wave-3 {
+    &:after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        content: "";
+        position: absolute;
+        background: no-repeat url("/assets/images/shapes/wave-3.png") bottom center / cover;
+    }
+}
 
 /*------------------------------------
     Other Styles
@@ -238,124 +273,6 @@
 ------------------------------------*/
 
 /*------------------------------------
-    Element: circle
-------------------------------------*/
-
-.el-circle {
-    width: 100%;
-    position: absolute;
-}
-
-// circle 1
-.el-circle-1 {
-    width: 600px;
-}
-.el-circle-1 .circle {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-    @extend .shadow-left;
-}
-.el-circle-1 .circle,
-.el-circle-1 .circle:before,
-.el-circle-1 .circle:after {
-    display: block;
-    border-radius: 50%;
-    background-color: $primary;
-}
-.el-circle-1 .circle:before,
-.el-circle-1 .circle:after {
-    content: "";
-    position: absolute;
-    background-color: $white;
-    @extend .display-center;
-}
-.el-circle-1 .circle:before {
-    width: 72%;
-    height: 72%;
-    opacity: 0.1;
-}
-.el-circle-1 .circle:after {
-    width: 36%;
-    height: 36%;
-    opacity: 0.1;
-}
-
-/*------------------------------------
-    Element: Tabs
-------------------------------------*/
-
-.el-tabs {
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    margin-bottom: 0 0 30px;
-}
-
-.el-headline-link {
-    right: 0;
-    bottom: 3px;
-    position: absolute;
-
-    span {
-        font-weight: 700;
-        display: inline-block;
-        padding-right: 9px;
-    }
-    .icon {
-        top: 2px;
-        color: $primary;
-        font-size: 14px;
-        position: relative;
-    }
-    &:hover {
-        color: $primary;
-    }
-}
-
-// Tabs 1
-.el-tabs-1 {
-    .el-tabs-links {
-        padding: 0;
-        text-align: center;
-        margin: 0 auto 30px;
-
-        li {
-            display: inline-block;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 500;
-            position: relative;
-            padding: 7px 15px;
-            border-radius: 30px;
-            user-select: none;
-            margin-right: 9px;
-            background-color: $gray;
-
-            &.active,
-            &.react-tabs__tab--selected {
-                color: $primary;
-            }
-        }
-    }
-}
-
-// Tabs 2
-.el-tabs-2 {
-    .el-tabs-links {
-        padding: 0;
-        list-style: none;
-
-        li {
-            display: inline-block;
-            margin-right: 30px;
-        }
-    }
-}
-
-/*------------------------------------
     Element: Frame
 ------------------------------------*/
 
@@ -420,60 +337,24 @@
         padding-top: 7px;
     }
 }
+.el-headline-link {
+    right: 0;
+    bottom: 3px;
+    position: absolute;
 
-/*------------------------------------
-    Element: Headline
-------------------------------------*/
-
-.el-headline {
-    width: 100%;
-    position: relative;
-    margin-bottom: 50px;
-
-    p {
-        color: $text-color;
-        display: block;
-        margin-bottom: 0;
+    span {
+        font-weight: 700;
+        display: inline-block;
+        padding-right: 9px;
     }
-    h2 {
-        font-size: 45px;
-        line-height: 1.4;
+    .icon {
+        top: 2px;
+        color: $primary;
+        font-size: 14px;
+        position: relative;
     }
-    .el-headline-link {
-        right: 0;
-        bottom: 3px;
-        position: absolute;
-
-        span {
-            font-weight: 700;
-            display: inline-block;
-            padding-right: 9px;
-        }
-        .icon {
-            top: 2px;
-            color: $primary;
-            font-size: 14px;
-            position: relative;
-        }
-        &:hover {
-            color: $primary;
-        }
-    }
-}
-
-.el-headline {
-    &.center {
-        text-align: center;
-
-        .el-headline-link {
-            left: 0;
-            right: 0;
-            position: relative;
-            margin: 15px auto 0;
-        }
-        p + .el-headline-link {
-            margin: 30px auto 0;
-        }
+    &:hover {
+        color: $primary;
     }
 }
 
@@ -526,6 +407,115 @@ Section: Hero
     }
 }
 
+// Hero 1
+.section-hero-1 {
+    background-color: #300f49;
+
+    .el-heading {
+        h1 {
+            color: $white;
+        }
+        p {
+            color: $gray;
+        }
+    }
+    .hero-entry {
+        position: relative;
+
+        &:before {
+            top: 50%;
+            left: 50%;
+            width: 450px;
+            height: 450px;
+            z-index: 1;
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background-color: $primary;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// Hero 6
+.section-hero-6 {
+    overflow: hidden;
+    background-color: #f6f5fa;
+
+    .mockups {
+        width: 420px;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        transform: rotate(30deg);
+
+        li {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+            transition: all 450ms;
+
+            .holder {
+                width: 100%;
+                overflow: hidden;
+                padding-top: 60%;
+                background-color: $primary;
+
+                img {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+
+            &:nth-child(even) {
+                .holder {
+                    padding-top: 90%;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.02, 1.02);
+            }
+        }
+
+        &.mockups-1 {
+            top: 120px;
+            right: -50px;
+        }
+        &.mockups-2 {
+            top: -150px;
+            right: 300px;
+        }
+    }
+
+    .el-shape {
+        opacity: 0.3;
+
+        &.el-shape-1 {
+            top: 21%;
+            left: 6%;
+            position: absolute;
+        }
+        &.el-shape-2 {
+            top: 45%;
+            left: 3%;
+            position: absolute;
+            animation: animationFramesThree 30s alternate infinite linear;
+        }
+        &.el-shape-3 {
+            top: 75%;
+            left: 6%;
+            opacity: 0.3 !important;
+            position: absolute;
+            animation: animationFramesOne 30s alternate infinite linear;
+        }
+    }
+}
+
 .section-hero-2 {
     background-color: $gray;
 
@@ -541,143 +531,6 @@ Section: Hero
     }
     .display-center {
         z-index: 12;
-    }
-}
-
-/*------------------------------------
-    Section: About
-------------------------------------*/
-
-.section-about {
-    overflow: hidden;
-    position: relative;
-}
-
-// About 1
-.section-about-1 {
-    .el-heading {
-        margin-bottom: 25px;
-    }
-    .about-us-box {
-        height: 100%;
-        overflow: hidden;
-        text-align: center;
-        padding: 30px;
-        @include overlay("pattern");
-
-        .image {
-            z-index: 3;
-            height: 100%;
-            @extend .display-center;
-            @include overlay("image");
-        }
-        .shape-1,
-        .shape-2 {
-            width: 60%;
-            opacity: 0.6;
-            padding-top: 30%;
-            position: absolute;
-        }
-        .shape-1 {
-            top: 0;
-            left: 0;
-            border-top: 3px solid;
-            border-left: 3px solid;
-            border-color: $primary;
-        }
-        .shape-2 {
-            right: 0;
-            bottom: 0;
-            border-right: 3px solid;
-            border-bottom: 3px solid;
-            border-color: $primary;
-        }
-        .shape-3 {
-            top: 54%;
-            right: 0;
-            z-index: 15;
-            color: $white;
-            display: block;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
-            position: absolute;
-            padding: 30px 30px 45px;
-            background-color: $primary;
-
-            span {
-                display: block;
-                font-size: 45px;
-                padding: 0;
-            }
-            &:after {
-                right: 8px;
-                bottom: -21px;
-                content: "";
-                opacity: 0.45;
-                display: block;
-                position: absolute;
-                border: 22px solid transparent;
-                border-bottom-color: $primary;
-                transform: rotate(-45deg);
-            }
-        }
-    }
-    .el-progress:last-child {
-        margin-bottom: 30px;
-    }
-}
-
-/*------------------------------------
-Section: Service
-------------------------------------*/
-
-.section-service {
-    .card-item {
-        position: relative;
-
-        p {
-            color: $text-color;
-            font-size: 0.9em;
-            margin: 0;
-        }
-        .button {
-            margin-bottom: 15px;
-        }
-    }
-}
-// Service 1
-.section-service-1 {
-    .card-item {
-        margin-bottom: 45px;
-
-        h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-    }
-}
-
-// Service 2 & 3
-.section-service-2,
-.section-service-3 {
-    position: relative;
-
-    .column {
-        position: relative;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .card-item {
-        padding: 30px;
-        margin-bottom: 30px;
-        background-color: $white;
-        @extend .shadow-3;
-
-        h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
     }
 }
 
@@ -889,145 +742,6 @@ Section: Plans
 }
 
 /*------------------------------------
-    Section: Portfolio
-------------------------------------*/
-
-.section-portfolio {
-    .portfolio-item {
-        position: relative;
-        border-radius: 4px;
-
-        span {
-            color: $gray;
-            display: block;
-            font-size: 14px;
-            margin: 15px 0 12px;
-        }
-        .image,
-        .content {
-            transition: all 600ms;
-        }
-        .image {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-        &:hover .image {
-            opacity: 0.6;
-            transform: scale(1.2, 1.2);
-        }
-    }
-}
-
-// Portfolio 1
-.section-portfolio-1 {
-    .portfolio-item {
-        overflow: hidden;
-        padding-top: 140%;
-        background-color: $black;
-
-        .image {
-            &:after {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                content: "";
-                position: absolute;
-                background-color: rgba(25, 25, 25, 0.37);
-            }
-        }
-        .content {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            z-index: 3;
-            color: $white;
-            position: absolute;
-            padding: 30px;
-
-            h3 {
-                color: $white;
-                font-size: 21px;
-                font-weight: 600;
-                line-height: 1.7;
-                margin-bottom: 20px;
-            }
-            span {
-                color: $gray;
-                display: block;
-                margin-bottom: 15px;
-            }
-            .button {
-                &:hover {
-                    background-color: $primary;
-                    border-color: $primary;
-                }
-            }
-        }
-        &:before {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-            opacity: 0.75;
-            position: absolute;
-            background-color: $primary;
-            background-image: linear-gradient($primary 6%, $black);
-        }
-        &:hover {
-            .image {
-                opacity: 0.45;
-            }
-        }
-    }
-}
-
-// Portfolio 5
-.section-portfolio-5 {
-    .portfolio-item {
-        .portfolio-card {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            padding-top: 100%;
-            margin-bottom: 30px;
-            background-color: $primary;
-            @extend .shadow-3;
-
-            h2,
-            h3,
-            h4 {
-                color: $white;
-                font-size: 18px;
-                line-height: 1;
-            }
-            .icon {
-                top: 3px;
-                left: 0;
-                font-size: 14px;
-                position: relative;
-            }
-            .content {
-                opacity: 0;
-                z-index: 3;
-                text-align: center;
-                @extend .display-center;
-            }
-        }
-        &:hover .content {
-            opacity: 1;
-        }
-    }
-    .row {
-        justify-content: center !important;
-    }
-}
-
-/*------------------------------------
     Element: Shape
 ------------------------------------*/
 
@@ -1046,8 +760,8 @@ Section: Plans
 
 .el-shape {
     display: inline-block;
-    
-    .triangle {
+
+    &.triangle {
         width: 0;
         height: 0;
         display: inline-block;
@@ -1136,4 +850,52 @@ Section: Plans
 .portfolio-carousel .slick-slide {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.el-shape-dots {
+    width: 300px;
+    height: 300px;
+    display: block;
+    background: url("/assets/images/shapes/dots.png") no-repeat center center / contain;
+}
+
+/*------------------------------------
+    Element: Mobile Frame
+------------------------------------*/
+.el-mobile {
+    width: 266px;
+    height: 518px;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 53px;
+    background: no-repeat center center;
+
+    .el-slider {
+        top: 16px;
+        left: 50%;
+        width: 231px;
+        height: 488px;
+        z-index: 1;
+        position: relative;
+        background-color: #000;
+        transform: translate(-50%, 0);
+        
+        img {
+            max-width: 100%;
+        }
+
+    }
+    .el-mobile-frame {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        margin: auto;
+        background: no-repeat url("/assets/images/frames/phone-1.png") center center / cover;
+    }
 }
